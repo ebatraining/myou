@@ -1,0 +1,100 @@
+body{
+  margin:0;
+}
+
+header{
+  background-color:#F1EFE3;
+  padding:2% 0 2% 6%;
+}
+
+h1{
+	color:#1BCADA;
+	margin:0;
+	position:relative;
+	padding-left:13px;
+}
+
+h1:before{
+	position:absolute;
+	content:"";
+	background-color:#C83537;
+	width:8px;
+	top:0;
+	bottom:0;
+	left:0;
+}
+
+main{
+  max-width:1000px;
+  margin:0 auto;
+}
+
+.gnavi{
+
+}
+
+.gnavi ul{
+  list-style:none;
+  padding:0;
+}
+
+.gnavi ul li{
+  float:left;
+  border:1px solid #1BCADA;
+  margin-right:10px;
+  width:calc((100% - 30px) / 4);
+  text-align:center;
+  box-sizing:border-box;
+  position:relative;
+  padding-left:15px;
+}
+
+.gnavi ul li:before{
+	position: absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	content:"";
+	width:10px;
+}
+
+.gnavi ul li:first-child:before{
+	background-color: #C01A1D;
+}
+
+.gnavi ul li:nth-child(2):before{
+	background-color:#0D80C9;
+}
+
+.gnavi ul li:nth-child(3):before{
+	background-color:#0CC951;
+}
+
+.gnavi ul li:last-child:before{
+	background-color: #C0A519;
+}
+
+.gnavi ul li:last-child{
+	margin:0;
+}
+
+.gnavi ul li a{
+  text-decoration:none;
+  color:#1BCADA;
+  display:block;
+  padding:2% 0;
+}
+
+.gnavi ul li a:hover{
+  background-color:#1BCADA;
+  color:#FFFFFF;
+}
+
+/* micro clearfx */
+.cf:before,
+.cf:after{
+		content: "";
+		display: table;
+}
+.cf:after{ clear: both; }
+.cf{ zoom: 1; } /* For IE 6/7 */
